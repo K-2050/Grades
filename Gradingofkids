@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter marks :");
+    scanf("%d",&n);
+    ((n<40)? printf("Grade F"): ((n>=40 && n<=54)?printf("Grade D"):((n>=55 && n<=69)? printf("Grade C"):((n>=70 && n<=84)?printf("Grade B"):((n>=85 && n<=100)?printf("Grade A"):printf(" "))))));
+}
+
+4 . Sum of digits:
+
+#include <stdio.h> 
+int dsum(int n) 
+{ 
+    if (n == 0) 
+       return 0; 
+    if(n<0)
+    n=n*-1;
+    return (n % 10 + dsum(n / 10)); 
+} 
+int main() 
+{ 
+    int n; 
+    printf("Input number: ");
+    scanf("%d",&n);
+    printf("Sum of digits: %d",dsum(n)); 
+    return 0; 
+}
